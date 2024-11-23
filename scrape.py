@@ -1,5 +1,3 @@
-# beauty_soup.py
-
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
@@ -24,7 +22,7 @@ for j in range(2):
         for paragraph in paragraphs:
             words += paragraph.get_text().split()
 
-        file = open("test.txt", 'a', encoding="utf8")
+        file = open("out.txt", 'a', encoding="utf8")
 
         for i in range(0, len(words), 15):
             if(count == LINE_NUM):
